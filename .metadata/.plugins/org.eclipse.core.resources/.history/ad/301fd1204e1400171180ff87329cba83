@@ -57,7 +57,7 @@ public class MedicineDOMBuilder extends AbstractMedicineBuilder {
 		// получение списка дочерних элементов <student>
 			NodeList medicineList = root.getChildNodes();
 			for (int i = 0; i < medicineList.getLength(); i++) {
-				if (medicineList.item(i).getNodeType() == Node.ELEMENT_NODE && medicineList.item(i).getNodeName().matches("\\S.*?medicine")){
+				if (medicineList.item(i).getNodeType() == Node.ELEMENT_NODE){
 					current = (medicineList.item(i).getNodeName().contains("foreign")) ? new ForeignMedicine() : new DomesticMedicine();
 					Element medicineElement = (Element) medicineList.item(i);
 					buildMedicine(medicineElement);

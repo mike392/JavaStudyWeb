@@ -645,3 +645,11 @@ java.lang.NullPointerException: null
 2017-03-29 09:23:15,407 [Worker-1617] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2017-03-29 09:23:15,409 [Worker-1617] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
 2017-03-29 09:23:15,410 [Worker-1617] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\webwork\SecondWeb\src\test\resources
+2017-03-29 09:40:14,997 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-29 09:40:15,011 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-03-29 09:40:15,050 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-29 09:40:15,054 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\webwork\SecondWeb\src\test\resources
+2017-03-29 09:42:42,508 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-29 09:42:42,522 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-29 09:42:42,523 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-29 09:42:42,524 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\webwork\SecondWeb\src\test\resources

@@ -57,12 +57,11 @@ public class MedicineDOMBuilder extends AbstractMedicineBuilder {
 		// получение списка дочерних элементов <student>
 			NodeList medicineList = root.getChildNodes();
 			for (int i = 0; i < medicineList.getLength(); i++) {
-				if (medicineList.item(i).getNodeType() == Node.ELEMENT_NODE && medicineList.item(i).getNodeName().matches("\\S.*?medicine")){
+				if (medicineList.item(i).getNodeType() == Node.ELEMENT_NODE){
 					current = (medicineList.item(i).getNodeName().contains("foreign")) ? new ForeignMedicine() : new DomesticMedicine();
 					Element medicineElement = (Element) medicineList.item(i);
-					buildMedicine(medicineElement);
-					medicines.add(current);
-					current = null;
+					Medicine medicine = buildMedicine(medicineElement);
+					medicines.add(medicine);
 				}
 			}
 		} catch (IOException e) {
@@ -72,7 +71,7 @@ public class MedicineDOMBuilder extends AbstractMedicineBuilder {
 		}
 	}
 
-	private void buildMedicine(Element medicineElement) {
+	private Medicine buildMedicine(Element medicineElement) {
 		for (int i = 0; i< medicineElement.getAttributes().getLength(); i++){
 			Node attr = medicineElement.getAttributes().item(i);
 			AttributeEnum temp = getAttributeEnumByName(attr.getNodeName());
@@ -81,6 +80,7 @@ public class MedicineDOMBuilder extends AbstractMedicineBuilder {
 				invokeSetterForAttribute(attr.getNodeValue());
 			}
 		}
+		return current;
 	}
 	
 	private AttributeEnum getAttributeEnumByName(String name) {
