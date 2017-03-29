@@ -479,3 +479,169 @@ java.lang.NullPointerException: null
 	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1355) ~[na:na]
 	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:81) ~[na:na]
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
+2017-03-27 12:46:09,765 [Worker-8] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-03-27 12:46:10,491 [Worker-8] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: SecondWeb:SecondWeb:0.0.1-SNAPSHOT @ D:\workspace\webwork\SecondWeb\pom.xml.
+2017-03-27 12:46:12,784 [Worker-8] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SecondWeb/src
+2017-03-27 12:46:12,785 [Worker-8] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Resources folder /SecondWeb/src overlaps with sources folder /SecondWeb/src
+2017-03-27 12:46:12,786 [Worker-8] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /SecondWeb/src/test/java because it overlaps with /SecondWeb/src
+2017-03-27 12:46:13,400 [Worker-8] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for SecondWeb
+2017-03-27 12:46:13,425 [Worker-8] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 3 sec
+2017-03-27 12:47:35,039 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-27 12:47:35,048 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-03-27 12:47:35,074 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-27 12:47:35,075 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\webwork\SecondWeb\src\test\resources
+2017-03-27 12:47:35,075 [Worker-5] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of SecondWeb
+2017-03-27 12:47:35,076 [Worker-5] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for SecondWeb
+2017-03-27 12:47:35,082 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.maven.plugins:maven-clean-plugin:jar:2.5 is missing, no dependency information available
+2017-03-27 12:47:35,090 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-27 13:03:42,863 [Worker-28] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-03-27 13:03:44,193 [Worker-28] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: SecondWeb:SecondWeb:0.0.1-SNAPSHOT @ D:\workspace\webwork\SecondWeb\pom.xml.
+2017-03-27 13:03:45,533 [Worker-28] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SecondWeb/src
+2017-03-27 13:03:45,533 [Worker-28] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Resources folder /SecondWeb/src overlaps with sources folder /SecondWeb/src
+2017-03-27 13:03:45,534 [Worker-28] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /SecondWeb/src/test/java because it overlaps with /SecondWeb/src
+2017-03-27 13:03:45,828 [Worker-28] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for SecondWeb
+2017-03-27 13:03:45,834 [Worker-28] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 2 sec
+2017-03-27 14:46:11,176 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-27 14:46:11,187 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-03-27 14:46:11,196 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-27 14:46:11,197 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\webwork\SecondWeb\src\test\resources
+2017-03-27 14:46:11,319 [Worker-15] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of SecondWeb
+2017-03-27 14:46:11,320 [Worker-15] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for SecondWeb
+2017-03-27 14:46:11,326 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.maven.plugins:maven-clean-plugin:jar:2.5 is missing, no dependency information available
+2017-03-27 14:46:11,333 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-27 17:52:04,080 [Worker-135] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-27 17:52:04,100 [Worker-135] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-03-27 17:52:04,105 [Worker-135] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-27 17:52:04,106 [Worker-135] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\webwork\SecondWeb\src\test\resources
+2017-03-27 22:01:54,097 [Worker-275] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-27 22:01:54,100 [Worker-275] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-03-27 22:01:54,102 [Worker-275] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-27 22:01:54,103 [Worker-275] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\webwork\SecondWeb\src\test\resources
+2017-03-27 22:02:52,689 [Worker-274] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-27 22:02:52,691 [Worker-274] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-03-27 22:02:52,693 [Worker-274] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-27 22:02:52,693 [Worker-274] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\webwork\SecondWeb\src\test\resources
+2017-03-28 11:28:58,969 [Worker-668] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 11:28:58,972 [Worker-668] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-03-28 11:28:58,974 [Worker-668] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 11:28:58,975 [Worker-668] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\webwork\SecondWeb\src\test\resources
+2017-03-28 11:55:56,136 [Worker-706] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 11:55:56,139 [Worker-706] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-03-28 11:55:56,141 [Worker-706] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 11:55:56,142 [Worker-706] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\webwork\SecondWeb\src\test\resources
+2017-03-28 11:56:55,241 [Worker-745] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 11:56:55,244 [Worker-745] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-03-28 11:56:55,246 [Worker-745] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 11:56:55,246 [Worker-745] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\webwork\SecondWeb\src\test\resources
+2017-03-28 12:00:05,696 [Worker-740] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 12:00:05,699 [Worker-740] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-03-28 12:00:05,701 [Worker-740] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 12:00:05,702 [Worker-740] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\webwork\SecondWeb\src\test\resources
+2017-03-28 12:04:04,090 [Worker-765] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 12:04:04,092 [Worker-765] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-03-28 12:04:04,094 [Worker-765] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 12:04:04,095 [Worker-765] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\webwork\SecondWeb\src\test\resources
+2017-03-28 12:15:02,560 [Worker-815] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 12:15:02,563 [Worker-815] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-03-28 12:15:02,565 [Worker-815] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 12:15:02,566 [Worker-815] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\webwork\SecondWeb\src\test\resources
+2017-03-28 12:19:15,359 [Worker-843] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 12:19:15,361 [Worker-843] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-03-28 12:19:15,363 [Worker-843] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 12:19:15,364 [Worker-843] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\webwork\SecondWeb\src\test\resources
+2017-03-28 12:22:21,163 [Worker-826] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 12:22:21,165 [Worker-826] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-03-28 12:22:21,167 [Worker-826] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 12:22:21,168 [Worker-826] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\webwork\SecondWeb\src\test\resources
+2017-03-28 12:26:27,283 [Worker-833] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 12:26:27,285 [Worker-833] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-03-28 12:26:27,311 [Worker-833] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 12:26:27,312 [Worker-833] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\webwork\SecondWeb\src\test\resources
+2017-03-28 12:27:53,868 [Worker-833] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 12:27:53,871 [Worker-833] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-03-28 12:27:53,872 [Worker-833] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 12:27:53,873 [Worker-833] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\webwork\SecondWeb\src\test\resources
+2017-03-28 12:30:26,276 [Worker-836] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 12:30:26,279 [Worker-836] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-03-28 12:30:26,280 [Worker-836] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 12:30:26,281 [Worker-836] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\webwork\SecondWeb\src\test\resources
+2017-03-28 12:33:28,529 [Worker-829] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 12:33:28,532 [Worker-829] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-03-28 12:33:28,533 [Worker-829] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 12:33:28,534 [Worker-829] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\webwork\SecondWeb\src\test\resources
+2017-03-28 12:46:20,565 [Worker-877] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 12:46:20,569 [Worker-877] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-03-28 12:46:20,571 [Worker-877] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 12:46:20,572 [Worker-877] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\webwork\SecondWeb\src\test\resources
+2017-03-28 12:54:22,986 [Worker-913] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 12:54:22,988 [Worker-913] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-03-28 12:54:22,990 [Worker-913] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 12:54:22,991 [Worker-913] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\webwork\SecondWeb\src\test\resources
+2017-03-28 12:55:27,615 [Worker-922] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 12:55:27,618 [Worker-922] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-03-28 12:55:27,619 [Worker-922] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 12:55:27,620 [Worker-922] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\webwork\SecondWeb\src\test\resources
+2017-03-28 12:57:51,483 [Worker-917] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 12:57:51,494 [Worker-917] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-03-28 12:57:51,500 [Worker-917] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 12:57:51,501 [Worker-917] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\webwork\SecondWeb\src\test\resources
+2017-03-28 12:59:37,955 [Worker-918] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 12:59:37,958 [Worker-918] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-03-28 12:59:37,960 [Worker-918] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 12:59:37,961 [Worker-918] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\webwork\SecondWeb\src\test\resources
+2017-03-28 13:00:11,053 [Worker-920] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 13:00:11,055 [Worker-920] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-03-28 13:00:11,057 [Worker-920] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 13:00:11,058 [Worker-920] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\webwork\SecondWeb\src\test\resources
+2017-03-28 15:41:20,358 [Worker-935] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 15:41:20,360 [Worker-935] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-03-28 15:41:20,362 [Worker-935] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 15:41:20,363 [Worker-935] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\webwork\SecondWeb\src\test\resources
+2017-03-28 16:25:40,475 [Worker-1056] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 16:25:40,478 [Worker-1056] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-03-28 16:25:40,480 [Worker-1056] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 16:25:40,480 [Worker-1056] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\webwork\SecondWeb\src\test\resources
+2017-03-28 16:41:45,667 [Worker-1085] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 16:41:45,670 [Worker-1085] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-03-28 16:41:45,672 [Worker-1085] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 16:41:45,672 [Worker-1085] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\webwork\SecondWeb\src\test\resources
+2017-03-28 16:46:17,028 [Worker-1131] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 16:46:17,030 [Worker-1131] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-03-28 16:46:17,031 [Worker-1131] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 16:46:17,032 [Worker-1131] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\webwork\SecondWeb\src\test\resources
+2017-03-28 17:31:37,061 [Worker-1162] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 17:31:37,137 [Worker-1162] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-03-28 17:31:37,138 [Worker-1162] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 17:31:37,139 [Worker-1162] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\webwork\SecondWeb\src\test\resources
+2017-03-28 17:33:26,212 [Worker-1168] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 17:33:26,213 [Worker-1168] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-28 17:33:26,214 [Worker-1168] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 17:33:26,215 [Worker-1168] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\webwork\SecondWeb\src\test\resources
+2017-03-28 18:24:55,904 [Worker-1179] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 18:24:55,907 [Worker-1179] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-03-28 18:24:55,908 [Worker-1179] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 18:24:55,909 [Worker-1179] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\webwork\SecondWeb\src\test\resources
+2017-03-28 18:38:07,793 [Worker-1222] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 18:38:07,795 [Worker-1222] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-28 18:38:07,797 [Worker-1222] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 18:38:07,811 [Worker-1222] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\webwork\SecondWeb\src\test\resources
+2017-03-28 18:47:45,223 [Worker-1278] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 18:47:45,256 [Worker-1278] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-28 18:47:45,259 [Worker-1278] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 18:47:45,260 [Worker-1278] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\webwork\SecondWeb\src\test\resources
+2017-03-28 18:56:12,538 [Worker-1306] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 18:56:12,541 [Worker-1306] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-03-28 18:56:12,542 [Worker-1306] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 18:56:12,545 [Worker-1306] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\webwork\SecondWeb\src\test\resources
+2017-03-28 19:01:25,930 [Worker-1309] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 19:01:25,933 [Worker-1309] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-03-28 19:01:25,934 [Worker-1309] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 19:01:25,935 [Worker-1309] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\webwork\SecondWeb\src\test\resources
+2017-03-28 19:04:00,167 [Worker-1280] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 19:04:00,169 [Worker-1280] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-28 19:04:00,170 [Worker-1280] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-28 19:04:00,171 [Worker-1280] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\webwork\SecondWeb\src\test\resources
+2017-03-29 09:23:15,404 [Worker-1617] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-29 09:23:15,407 [Worker-1617] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-03-29 09:23:15,409 [Worker-1617] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-29 09:23:15,410 [Worker-1617] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\webwork\SecondWeb\src\test\resources

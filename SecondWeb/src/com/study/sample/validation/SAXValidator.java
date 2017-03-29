@@ -15,9 +15,9 @@ import org.xml.sax.SAXException;
 public class SAXValidator {
 	public static boolean isValidXML(String path) {
 		boolean result = false;
-		String filename = Paths.get(path, "\\data\\Pharmacy.xml").toString();
-		String schemaname = Paths.get(path, "\\data\\Pharmacy.xsd").toString();
-		String logname = Paths.get(path, "\\logs\\log.txt").toString();
+		String filename = Paths.get(path, "Pharmacy.xml").toString();
+		String schemaname = Paths.get(path, "Pharmacy.xsd").toString();
+		String logname = Paths.get(path, "log.txt").toString();
 		Schema schema = null;
 		String language = XMLConstants.W3C_XML_SCHEMA_NS_URI;
 		SchemaFactory factory = SchemaFactory.newInstance(language);

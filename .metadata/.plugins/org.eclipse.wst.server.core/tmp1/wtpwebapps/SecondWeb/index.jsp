@@ -26,14 +26,17 @@
 		      <li class="nav-item">
 		        <a class="nav-link disabled" href="#">Сделать запрос</a>
 		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="uploadFile">Загрузить файл XML</a>
+		      </li>
 		      <li class="nav-item dropdown">
 		        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		          Отобразить парсинг
 		        </a>
 		        <div class="dropdown-menu">
-		          <a class="dropdown-item" href="parsed">SAX парсер</a>
-		          <a class="dropdown-item disabled" href="#">DOM парсер</a>
-		          <a class="dropdown-item disabled" href="#">StAX парсер</a>
+		          <a class="dropdown-item" href="parsed?parser=SAX">SAX парсер</a>
+		          <a class="dropdown-item" href="parsed?parser=DOM">DOM парсер</a>
+		          <a class="dropdown-item" href="parsed?parser=STAX">StAX парсер</a>
 		        </div>
 		      </li>
 		    </ul>

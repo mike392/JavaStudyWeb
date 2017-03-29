@@ -7,7 +7,7 @@ import org.xml.sax.XMLReader;
 import org.xml.sax.helpers.XMLReaderFactory;
 import com.study.sample.entity.Medicine;
 
-public class MedicineSAXBuilder {
+public class MedicineSAXBuilder extends AbstractMedicineBuilder {
 	private Set<Medicine> medicines;
 	private MedicineHandler mh;
 	private XMLReader reader;

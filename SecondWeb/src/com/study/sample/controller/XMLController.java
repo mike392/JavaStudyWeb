@@ -1,9 +1,13 @@
 package com.study.sample.controller;
 
 import java.io.IOException;
-import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.time.Duration;
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.time.temporal.TemporalUnit;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
@@ -12,9 +16,9 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
 import com.study.sample.entity.Medicine;
-import com.study.sample.parser.MedicineSAXBuilder;
+import com.study.sample.parser.AbstractMedicineBuilder;
+import com.study.sample.parser.MedicineBuilderFactory;
 import com.study.sample.validation.SAXValidator;
 
 /**
@@ -44,13 +48,16 @@ public class XMLController extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String path = request.getServletContext().getRealPath("\\");
+		String path = Paths.get(request.getServletContext().getRealPath("\\"), request.getServletContext().getInitParameter("file-upload")).toString();
 		String err = "";
 		if (SAXValidator.isValidXML(path)){
-			MedicineSAXBuilder builder = new MedicineSAXBuilder();
-			builder.buildSetMedicines(Paths.get(path, "\\data\\Pharmacy.xml").toString());
-			List<Medicine> medicines = new ArrayList<Medicine>(builder.getMedicines());
+			AbstractMedicineBuilder builder = new MedicineBuilderFactory().createMedicineBuilder(request.getParameter("parser"));
+			LocalTime time = LocalTime.now();
+			builder.buildSetMedicines(Paths.get(path, "Pharmacy.xml").toString());
+			Set<Medicine> medicines = builder.getMedicines();
+			long diff = Duration.between(time, LocalTime.now()).toNanos()/1_000_000;
 			request.setAttribute("res", medicines);
+			request.setAttribute("diff", diff);
 		} else {
 			err = "Validation failed";
 		}

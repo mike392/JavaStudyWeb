@@ -9,4 +9,18 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <context-param> 
+    <description>Location to store uploaded file</description> 
+    <param-name>file-upload</param-name> 
+    <param-value>
+         data
+     </param-value> 
+</context-param>
+<context-param> 
+    <description>Name store uploaded file</description> 
+    <param-name>file-upload-name</param-name> 
+    <param-value>
+         Pharmacy.xml
+     </param-value> 
+</context-param>
 </web-app>

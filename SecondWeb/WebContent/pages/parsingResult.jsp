@@ -1,10 +1,10 @@
-<%@ page language="java" contentType="text/html; charset=utf8"
-    pageEncoding="utf8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">         
@@ -13,8 +13,12 @@
 </head>
 <body>
 <div class="container">
+
 <c:choose>
     <c:when test="${res != null}">
+		<div class="alert alert-success" role="alert">
+  			<strong>Парсинг длился ${diff} мсек</strong>
+		</div>
 		 <table class="table">
 		    <tr>
 		        <th>Number</th>
@@ -41,7 +45,9 @@
         <br />
     </c:when>    
     <c:otherwise>
-        ${err} 
+    <div class="alert alert-danger" role="alert">
+  		<strong>${err}</strong>
+	</div>
     </c:otherwise>
 </c:choose>
 <form action="index.jsp">
