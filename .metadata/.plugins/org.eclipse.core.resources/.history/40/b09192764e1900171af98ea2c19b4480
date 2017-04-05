@@ -1,0 +1,5 @@
+package com.study.sample.util;
+
+public class StringHashProvider {
+
+}

@@ -1,0 +1,86 @@
+package com.study.sample.dao;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.ConcurrentSkipListSet;
+import java.util.concurrent.CopyOnWriteArrayList;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.locks.ReentrantLock;
+
+import org.apache.logging.log4j.Level;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import com.study.sample.util.DatabaseConfigManager;
+
+public class ConnectionManager <T extends Connection> {
+	private static Logger logger = LogManager.getLogger(ConnectionManager.class);
+	private static final ConnectionManager<OracleConnection> instance = new ConnectionManager<OracleConnection>(OracleConnection.class);
+	private BlockingQueue<T> freePool;
+	private List<T> usedPool = new CopyOnWriteArrayList<T>();
+	private static final ReentrantLock lock = new ReentrantLock();
+	
+	private ConnectionManager(Class<T> clazz){
+		int poolSize = Integer.parseInt(DatabaseConfigManager.getProperty("connectionpool.size"));
+		freePool = new ArrayBlockingQueue<T>(poolSize);
+		for (int i=0;i<poolSize;i++){
+			T conn;
+			try {
+				conn = clazz.newInstance();
+				freePool.offer(conn);
+			} catch (InstantiationException | IllegalAccessException e) {
+				logger.log(Level.ERROR, "Cannot create Oracle connection " + e.getLocalizedMessage());
+			}
+			
+		}
+	}
+	public static ConnectionManager<?> getInstance(){
+		try {
+			lock.lock();
+			return instance;
+		} finally {
+			lock.unlock();
+		}
+	}
+	
+	public T getConnection(){
+		T connection = null;
+		while (connection == null) {
+			if (hasFreeConnections()){
+					try {
+						connection = freePool.take();
+						usedPool.add(connection);
+					} catch (InterruptedException e) {
+						logger.log(Level.ERROR, "Failed to take connection from the pool" + e.getLocalizedMessage());
+					}
+			} else {
+				int sleepTime = Integer.parseInt(DatabaseConfigManager.getProperty("connectionpool.size"));
+				try {
+					TimeUnit.MILLISECONDS.sleep(sleepTime);
+				} catch (InterruptedException e) {
+					logger.log(Level.ERROR, "Interrupted exception " + e.getLocalizedMessage());
+				}
+				}
+			}
+		return connection;
+	}
+	
+	public <T extends Connection> void releaseConnection(T cn){
+		freePool.offer(cn);
+		usedPool.remove(cn);
+	}
+	
+	private boolean hasFreeConnections() {
+		boolean result = false;
+		if (!freePool.isEmpty()){
+			result = true;
+		}
+		return result;
+	}
+}

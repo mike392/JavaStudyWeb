@@ -1,0 +1,24 @@
+package com.study.sample.logic;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import com.study.sample.dao.ConnectionManager;
+import com.study.sample.util.DatabaseConfigManager;
+
+public class LoginLogic {
+
+	public static boolean checkLogin(String login, String pass) {
+		Connection cn = ConnectionManager.getConnection();
+		try {
+			Statement st = cn.createStatement();
+			ResultSet result = st.executeQuery(DatabaseConfigManager.getProperty("query.logic.checkpassword").format(login, pass));
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return false;
+	}
+
+}

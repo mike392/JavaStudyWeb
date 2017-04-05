@@ -1,0 +1,5 @@
+package com.study.sample.action;
+
+public interface Action {
+
+}

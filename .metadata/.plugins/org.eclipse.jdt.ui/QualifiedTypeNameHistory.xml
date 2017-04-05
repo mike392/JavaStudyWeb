@@ -18,4 +18,27 @@
 <fullyQualifiedTypeName name="java.io.File"/>
 <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
 <fullyQualifiedTypeName name="java.io.OutputStream"/>
+<fullyQualifiedTypeName name="java.util.ResourceBundle"/>
+<fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+<fullyQualifiedTypeName name="com.study.sample.action.impl.LoginAction"/>
+<fullyQualifiedTypeName name="com.study.sample.util.MessageManager"/>
+<fullyQualifiedTypeName name="com.study.sample.action.impl.TimeAction"/>
+<fullyQualifiedTypeName name="com.study.sample.action.impl.ParseAction"/>
+<fullyQualifiedTypeName name="com.study.sample.action.impl.LogoutAction"/>
+<fullyQualifiedTypeName name="com.study.sample.action.impl.EmptyAction"/>
+<fullyQualifiedTypeName name="com.study.sample.util.ConfigurationManager"/>
+<fullyQualifiedTypeName name="com.study.sample.action.ActionFactory"/>
+<fullyQualifiedTypeName name="com.study.sample.action.Action"/>
+<fullyQualifiedTypeName name="oracle.jdbc.pool.OracleDataSource"/>
+<fullyQualifiedTypeName name="java.util.Properties"/>
+<fullyQualifiedTypeName name="org.junit.Test"/>
+<fullyQualifiedTypeName name="com.study.sample.dao.DBConnection"/>
+<fullyQualifiedTypeName name="java.sql.DriverManager"/>
+<fullyQualifiedTypeName name="java.util.concurrent.locks.ReentrantLock"/>
+<fullyQualifiedTypeName name="com.study.sample.dao.ConnectionManager"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="java.sql.Statement"/>
+<fullyQualifiedTypeName name="com.study.sample.util.DatabaseConfigManager"/>
+<fullyQualifiedTypeName name="java.sql.ResultSet"/>
 </qualifiedTypeNameHistroy>

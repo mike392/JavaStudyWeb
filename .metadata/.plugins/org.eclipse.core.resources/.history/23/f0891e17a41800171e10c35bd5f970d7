@@ -1,0 +1,3 @@
+dbuser.name=system
+dbuser.password=12345
+db.url=jdbc:oracle:thin:@localhost:1521/ORCL

@@ -1,0 +1,5 @@
+package test.com.study.sample.dao;
+
+public class DBConnectionTest {
+
+}

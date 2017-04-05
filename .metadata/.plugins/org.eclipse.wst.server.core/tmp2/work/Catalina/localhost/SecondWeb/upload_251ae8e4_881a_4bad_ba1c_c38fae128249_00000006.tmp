@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:medicines xmlns:tns="http://www.entity.parser.study.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://www.entity.parser.study.com Pharmacy.xsd ">
+  <tns:foreign-medicine cert-number="1" country="Zimbabwe" dosage-amount="1" dosage-periodicity="1" expiration-date="2001-01-01" group="painkiller" medicine-id="idvalue0" medicine-name="somemed1" package-amount="1" package-type="" pharm="" price="1" version="tablet"/>
+  <tns:foreign-medicine cert-number="2" country="Zimbabwe" dosage-amount="1" dosage-periodicity="1" expiration-date="2001-01-01" group="painkiller" medicine-id="idvalue2" medicine-name="somemed2" package-amount="1" package-type="" pharm="" price="1" version="tablet"/>
+  <tns:domestic-medicine cert-number="3" country="Belarus" dosage-amount="1" dosage-periodicity="1" expiration-date="2001/01/01" group="painkiller" medicine-id="idvalue2" medicine-name="somemed3" package-amount="1" package-type="" pharm="" price="1" version="tablet"/>
+</tns:medicines>

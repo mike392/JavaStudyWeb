@@ -1,0 +1,24 @@
+package com.study.sample.action;
+
+import com.study.sample.action.impl.LoginAction;
+
+public enum ActionEnum {
+	LOGIN ( new LoginAction()
+		),
+		LOGOUT {
+		{
+			this.action = new LogoutAction();
+		}
+		};
+		Action action;
+		private ActionEnum(Action action){
+			this.setAction(action);
+		}
+		public void setAction(Action action) {
+			this.action = action;
+			
+		}
+		public Action getAction() {
+		return action;
+		}
+}

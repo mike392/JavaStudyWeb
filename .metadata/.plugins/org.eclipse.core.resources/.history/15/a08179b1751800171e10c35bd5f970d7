@@ -1,0 +1,23 @@
+package com.study.sample.dao;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.util.Properties;
+
+import com.study.sample.util.DatabaseConfigManager;
+
+import oracle.jdbc.pool.OracleDataSource;
+
+public class ConnectionManager {
+	private static Connection connection;
+	
+	public static Connection getConnection(){
+		if (connection == null){
+			connection = DriverManager.getConnection(DatabaseConfigManager.getProperty("db.url"), 
+													DatabaseConfigManager.getProperty("dbuser.name"), 
+													DatabaseConfigManager.getProperty("dbuser.password"));
+		}
+	return cn;
+	}
+}

@@ -1,0 +1,27 @@
+package com.study.sample.dao;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.util.Properties;
+
+import com.study.sample.util.DatabaseConfigManager;
+
+import oracle.jdbc.pool.OracleDataSource;
+
+public class ConnectionManager {
+	public static Connection getConnection(){
+		Connection cn = null;
+	try {
+		OracleDataSource ods = new OracleDataSource();
+		ods.setURL(DatabaseConfigManager.getProperty("db.url"));
+		ods.setUser(DatabaseConfigManager.getProperty("dbuser.name"));
+		ods.setPassword(DatabaseConfigManager.getProperty("dbuser.password"));
+		Properties cacheProps = new Properties();
+		ods.setConnectionProperties(cacheProps);
+		cn = ods.getConnection();
+	} catch (SQLException e) {
+		e.printStackTrace();
+	}
+	return cn;
+	}
+}
