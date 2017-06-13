@@ -6382,3 +6382,7 @@ org.eclipse.core.runtime.CoreException: Launch configuration DBConnectionTest re
 2017-05-24 13:19:20,034 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
 2017-05-24 13:19:20,116 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2017-05-24 13:19:20,119 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\webwork\Project\src\test\resources
+2017-06-13 16:41:37,930 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-13 16:41:37,969 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2017-06-13 16:41:38,031 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-13 16:41:38,045 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\webwork\Project\src\test\resources
