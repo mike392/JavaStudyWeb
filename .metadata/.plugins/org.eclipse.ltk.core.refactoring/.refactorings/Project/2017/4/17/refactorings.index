@@ -1,0 +1,34 @@
+1492418623846	Rename resource 'main.jsp'
+1492455381962	Delete element
+1492455387037	Delete element
+1492459048473	Delete element
+1492513867845	Encapsulate field 'login'
+1492513872215	Encapsulate field 'password'
+1492588884747	Encapsulate field 'balance'
+1492631167525	Encapsulate field 'username'
+1492631172032	Encapsulate field 'subname'
+1492631176569	Encapsulate field 'balance'
+1492669387989	Move compilation unit
+1492670534784	Encapsulate field 'blocked'
+1492672160528	Delete element
+1492672169227	Delete elements
+1492672220434	Delete elements
+1492672239064	Delete element
+1492672260658	Delete element
+1492673290128	Delete element
+1492702868520	Rename type 'ConnectionManager'
+1492703111730	Delete element
+1492703127415	Delete element
+1492756146900	Move compilation unit
+1492756153656	Move compilation unit
+1492756159827	Move compilation unit
+1492756168700	Move compilation unit
+1492756174325	Move compilation unit
+1492756179957	Move compilation unit
+1492756191819	Move compilation unit
+1492756213269	Move compilation unit
+1492756230196	Move compilation unit
+1492756237760	Move compilation unit
+1492756300370	Move compilation unit
+1492756309624	Move compilation unit
+1493121479552	Encapsulate field 'role'

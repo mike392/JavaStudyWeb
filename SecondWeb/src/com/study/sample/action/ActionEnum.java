@@ -1,6 +1,8 @@
 package com.study.sample.action;
 
+import com.study.sample.action.impl.ChangeLocaleAction;
 import com.study.sample.action.impl.EmptyAction;
+import com.study.sample.action.impl.LocaleAction;
 import com.study.sample.action.impl.LoginAction;
 import com.study.sample.action.impl.LogoutAction;
 import com.study.sample.action.impl.ParseAction;
@@ -15,7 +17,9 @@ public enum ActionEnum {
 	PARSE (new ParseAction()),
 	TIME (new TimeAction()),
 	UPLOAD(new UploadAction()),
-	EMPTY (new EmptyAction());
+	EMPTY (new EmptyAction()),
+	LOCALECHANGE(new ChangeLocaleAction()),
+	LOCALE(new LocaleAction());
 		
 	Action action;
 		

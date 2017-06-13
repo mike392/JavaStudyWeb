@@ -1,0 +1,10 @@
+0:0:0:0:0:0:0:1 - - [13/Apr/2017:12:18:50 +0300] "GET /SecondWeb/pages/main.jsp? HTTP/1.1" 200 2368
+0:0:0:0:0:0:0:1 - - [13/Apr/2017:12:18:53 +0300] "GET /SecondWeb/controller?command=localechange&locale=ru_ru HTTP/1.1" 200 2456
+0:0:0:0:0:0:0:1 - - [13/Apr/2017:12:18:55 +0300] "GET /SecondWeb/controller?command=localechange&locale=en_us HTTP/1.1" 200 2368
+0:0:0:0:0:0:0:1 - - [13/Apr/2017:12:18:56 +0300] "GET /SecondWeb/controller?command=locale HTTP/1.1" 200 1647
+0:0:0:0:0:0:0:1 - - [13/Apr/2017:12:18:58 +0300] "GET /SecondWeb/pages/main.jsp? HTTP/1.1" 200 2368
+127.0.0.1 - - [13/Apr/2017:18:32:10 +0300] "GET / HTTP/1.1" 404 1073
+0:0:0:0:0:0:0:1 - - [13/Apr/2017:18:32:12 +0300] "GET /SecondWeb/ HTTP/1.1" 200 2337
+0:0:0:0:0:0:0:1 - - [13/Apr/2017:18:32:13 +0300] "GET /SecondWeb/pages/login.jsp HTTP/1.1" 200 2740
+0:0:0:0:0:0:0:1 - - [13/Apr/2017:18:32:19 +0300] "POST /SecondWeb/controller?command=login HTTP/1.1" 200 2368
+0:0:0:0:0:0:0:1 - - [13/Apr/2017:18:32:21 +0300] "GET /SecondWeb/controller?command=localechange&locale=ru_ru HTTP/1.1" 200 2456

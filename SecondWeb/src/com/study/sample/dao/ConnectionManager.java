@@ -6,6 +6,7 @@ import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.TimeUnit;
+import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.locks.ReentrantLock;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
@@ -14,7 +15,8 @@ import com.study.sample.util.DatabaseConfigManager;
 
 public class ConnectionManager <T extends Connection> {
 	private static Logger logger = LogManager.getLogger(ConnectionManager.class);
-	private static final ConnectionManager<OracleConnection> instance = new ConnectionManager<OracleConnection>(OracleConnection.class);
+	private static AtomicBoolean isInitialized = new AtomicBoolean(false);
+	private static ConnectionManager<OracleConnection> instance;
 	private BlockingQueue<Connection> freePool;
 	private List<Connection> usedPool = new CopyOnWriteArrayList<Connection>();
 	private static final ReentrantLock lock = new ReentrantLock();
@@ -34,12 +36,15 @@ public class ConnectionManager <T extends Connection> {
 		}
 	}
 	public static ConnectionManager<?> getInstance(){
-		try {
-			lock.lock();
-			return instance;
-		} finally {
-			lock.unlock();
+		if (!isInitialized.get()){
+			try {
+				lock.lock();
+				instance = new ConnectionManager<OracleConnection>(OracleConnection.class);
+			} finally {
+				lock.unlock();
+			}
 		}
+		return instance;
 	}
 	
 	public Connection getConnection(){

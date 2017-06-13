@@ -1,5 +1,0 @@
-package com.study.sample.action;
-
-public enum ActionEnum {
-
-}

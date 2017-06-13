@@ -1,4 +1,0 @@
-dbuser.name=system
-dbuser.password=12345
-db.url=jdbc:oracle:thin:@localhost:1521/ORCL
-query.logic.checkpassword=select name, password from cust_users where name = '%s' and password = %s 

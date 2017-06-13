@@ -1,0 +1,2 @@
+0:0:0:0:0:0:0:1 - - [14/Apr/2017:11:27:01 +0300] "GET /SecondWeb/pages/main.jsp? HTTP/1.1" 200 2368
+0:0:0:0:0:0:0:1 - - [14/Apr/2017:11:27:15 +0300] "GET /SecondWeb/controller?command=localechange&locale=ru_ru HTTP/1.1" 200 2456
